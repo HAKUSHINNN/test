@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nihsukah.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="#about-me">私について</a>
+                        <a href="#skills">スキル</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="works.html">WORKS</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">CONTACT</a>
+                    <div class="dropdown-content">
+                        <a href="#contact-form">お問い合わせフォーム</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 自己紹介 -->
+    <div id="about-me" class="about">
+        <h1>私について</h1>
+        <div class="photo">
+            <img src="lucas.png" alt="写真"/>
+        </div>
+        <div class="description">
+            <p>よくわからないにんげんです．</p>
+        </div>
+        <div id="skills" class="skills">
+            <ul>
+                <li>英検 準二級</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- お問い合わせ -->
+    <div id="contact-form" class="contact">
+        <h2>お問い合わせフォーム</h2>
+        <form>
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="送信">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
